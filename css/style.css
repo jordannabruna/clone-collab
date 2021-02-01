@@ -1,0 +1,101 @@
+@font-face {
+    src: url(/assets/font/Poppins);
+    font-family: "Poppins";
+}
+
+* {
+    margin: 0;
+    border: 0;
+    padding: 0;
+}
+
+body {
+    background: #ffffff;
+    display: flex;
+}
+
+.home {
+    display: flex;
+    position: relative;
+    width: 100%;
+    height: fit-content;
+}
+.home .blue-large {
+    width: 610px;
+    height: 1220px;
+    background-color: #5956e9;
+    position: absolute;
+    z-index: -1;
+    top: -98px;
+    right: 0;
+    border-bottom-left-radius: 1220px;
+    border-top-left-radius: 1220px;
+}
+.home .body-home {
+    font-family: 'Poppins', sans-serif;
+    line-height: 1.5;
+}
+
+.home .body-home .header {
+    display: grid;
+    grid-template-columns: 50px 50px 50px 50px 50px 50px;
+    gap: 6rem;
+}
+
+.home .large-yellow-ball img {
+    opacity: 70%;
+    width: 24vw;
+    height: 48vh;
+    margin-top: -12rem;
+    margin-left: -12rem;
+    position: absolute;
+    z-index: -2;
+}
+
+.home .large-purple-ball img {
+    width: 50vw;
+    height: 100vh;
+    /* margin-top: -120px;
+    margin-left: -120px; */
+    position: absolute;
+    z-index: -2;
+}
+
+.home .yellow-ball img {
+    opacity: 70%;
+    width: 7vw;
+    height: 14vh;
+    margin-top: 15rem;
+    margin-left: 46rem;
+    position: absolute;
+    z-index: -2;
+}
+
+.home .pink-ball img {
+    width: 3vw;
+    height: 6vh;
+    margin-top: 30rem;
+    margin-left: 10rem;
+    position: absolute;
+    z-index: -1;
+}
+
+.home .purple-ball img {
+    width: 2vw;
+    height: 4vh;
+    margin-top: 48rem;
+    margin-left: 50rem;
+    position: absolute;
+    z-index: -1;
+}
+
+.home .white-ball img {
+    /* opacity: 70%; */
+    /* width: 20vw; */
+    /* height: 40vh; */
+    /* margin-top: -120px;
+    margin-left: -120px; */
+    position: absolute;
+    z-index: -1;
+}
+
