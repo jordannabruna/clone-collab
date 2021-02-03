@@ -31,16 +31,6 @@ body {
     border-bottom-left-radius: 1220px;
     border-top-left-radius: 1220px;
 }
-.home .body-home {
-    font-family: 'Poppins', sans-serif;
-    line-height: 1.5;
-}
-
-.home .body-home .header {
-    display: grid;
-    grid-template-columns: 50px 50px 50px 50px 50px 50px;
-    gap: 6rem;
-}
 
 .home .large-yellow-ball img {
     opacity: 70%;
@@ -99,3 +89,60 @@ body {
     z-index: -1;
 }
 
+.home .body-home {
+    font-family: 'Poppins', sans-serif;
+    line-height: 1.5;
+    width: 100%;
+}
+
+
+.home .body-home .header-container {
+    margin: 50px auto 0;
+    width: 90%;
+    height: 80px;
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-areas: "links links links search search";    
+}
+
+.home .body-home .header-container .links-container {
+    grid-area: links;
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+}
+
+
+.home .body-home .header-container .links-container .header-item {
+    padding: 0 40px 0 40px;
+    font-weight: 300;
+    font-family: 'Poppins', sans-serif;
+    color: #797878;
+    line-height: 1.5;
+    cursor: pointer;
+}
+
+.home .body-home .header-container .search-container {
+    grid-area: search;
+    display: flex;
+
+    align-items: center;
+    justify-content: flex-end;
+}
+
+.home .body-home .header-container .search-container .get-started {
+    height: 70px;
+    width: 180px;
+
+    background-color: #FAB8C4;
+    border-radius: 20px;
+    border: none;
+
+    font-family: 'Poppins', sans-serif;
+    font-weight: 500;
+    font-size: 16px;
+    color: #2522BA;
+    line-height: 1.5;
+    margin: 0 90px 0 0;
+}
