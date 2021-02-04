@@ -189,4 +189,47 @@ body {
     align-items: center;
     z-index: -1;
 }
+.home .body-home .body-home-container .img-home {
+    width: fit-content;
+    height: fit-content;
+    position: relative;
+}
+.home .body-home .body-home-container .img-home .home-pic-1 {
+    z-index: 4;
+    width: 380px;
+    z-index: 5;
+    position: absolute;
+    right: -30px;
+    top: 100px;
+}
 
+.home .body-home .body-home-container .title-box-container .buttons {
+    display: grid;
+    grid-template-columns: 180px 150px;
+    gap: 20px;
+
+    align-items: center;
+    margin-top: 40px;
+}
+
+.home .body-home .body-home-container .title-box-container .buttons .button{
+    height: 80px;
+    width: 180px;
+    background-color: #5956E9;
+    border-radius: 20px;
+    border: none;
+
+    font-family: 'Poppins', sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.5;
+    color: #ffffff;
+}
+
+.home .body-home .body-home-container .title-box-container .buttons .play {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.5;
+    color: #999FAE;
+}
