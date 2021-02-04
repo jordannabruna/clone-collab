@@ -3,6 +3,11 @@
     font-family: "Poppins";
 }
 
+@font-face {
+    src: url(/assets/font/DM_Sans);
+    font-family: 'DM Sans';
+}
+
 * {
     margin: 0;
     border: 0;
@@ -90,7 +95,6 @@ body {
 }
 
 .home .body-home {
-    font-family: 'Poppins', sans-serif;
     line-height: 1.5;
     width: 100%;
 }
@@ -146,3 +150,43 @@ body {
     line-height: 1.5;
     margin: 0 90px 0 0;
 }
+
+.home .body-home .body-home-container {
+    display: grid;
+    grid-template-columns: 400px 600px;
+    gap: 30px;
+    justify-content: center;
+    align-items: center;
+}
+
+.home .body-home .body-home-container .title-box-container {
+    margin-top: 85px;
+}
+
+.home .body-home .body-home-container .title-box-container .title-box-content .title-box {
+    font-family: 'DM Sans', sans-serif;
+    font-size: 96px;
+    font-weight: 500;
+    color: #292930;
+    line-height: 1;
+}
+
+.home .body-home .body-home-container .title-box-container .paragraph {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 300;
+    font-size: 18px;
+    letter-spacing: 1px;
+    line-height: 1.5;
+    color: #999FAE;
+
+    margin-top: 20px;
+}
+
+.home .body-home .body-home-container .img-home .home-pic-3 {
+    margin-top: 90px;
+    max-width: 800px;
+    max-height: 800px;
+    align-items: center;
+    z-index: -1;
+}
+
