@@ -3,6 +3,11 @@
     font-family: "Poppins";
 }
 
+@font-face {
+    src: url(/assets/font/DM_Sans);
+    font-family: 'DM Sans';
+}
+
 * {
     margin: 0;
     border: 0;
@@ -30,16 +35,6 @@ body {
     right: 0;
     border-bottom-left-radius: 1220px;
     border-top-left-radius: 1220px;
-}
-.home .body-home {
-    font-family: 'Poppins', sans-serif;
-    line-height: 1.5;
-}
-
-.home .body-home .header {
-    display: grid;
-    grid-template-columns: 50px 50px 50px 50px 50px 50px;
-    gap: 6rem;
 }
 
 .home .large-yellow-ball img {
@@ -99,3 +94,180 @@ body {
     z-index: -1;
 }
 
+.home .body-home {
+    line-height: 1.5;
+    width: 100%;
+}
+
+
+.home .body-home .header-container {
+    margin: 50px auto 0;
+    width: 90%;
+    height: 80px;
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-areas: "links links links search search";    
+}
+
+.home .body-home .header-container .links-container {
+    grid-area: links;
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+}
+
+
+.home .body-home .header-container .links-container .header-item {
+    padding: 0 40px 0 40px;
+    font-weight: 300;
+    font-family: 'Poppins', sans-serif;
+    color: #797878;
+    line-height: 1.5;
+    cursor: pointer;
+}
+
+.home .body-home .header-container .search-container {
+    grid-area: search;
+    display: flex;
+
+    align-items: center;
+    justify-content: flex-end;
+}
+
+.home .body-home .header-container .search-container .get-started {
+    height: 70px;
+    width: 180px;
+
+    background-color: #FAB8C4;
+    border-radius: 20px;
+    border: none;
+
+    font-family: 'Poppins', sans-serif;
+    font-weight: 500;
+    font-size: 16px;
+    color: #2522BA;
+    line-height: 1.5;
+    margin: 0 90px 0 0;
+}
+
+.home .body-home .body-home-container {
+    display: grid;
+    grid-template-columns: 400px 600px;
+    gap: 30px;
+    justify-content: center;
+    align-items: center;
+}
+
+.home .body-home .body-home-container .title-box-container {
+    margin-top: 85px;
+}
+
+.home .body-home .body-home-container .title-box-container .title-box-content .title-box {
+    font-family: 'DM Sans', sans-serif;
+    font-size: 96px;
+    font-weight: 500;
+    color: #292930;
+    line-height: 1;
+}
+
+.home .body-home .body-home-container .title-box-container .paragraph {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 300;
+    font-size: 18px;
+    letter-spacing: 1px;
+    line-height: 1.5;
+    color: #999FAE;
+
+    margin-top: 20px;
+}
+
+.home .body-home .body-home-container .img-home {
+    width: fit-content;
+    height: fit-content;
+    position: relative;
+}
+
+.home .body-home .body-home-container .img-home .home-pic-1 {
+    z-index: 4;
+    width: 380px;
+    z-index: 5;
+    position: absolute;
+    right: -30px;
+    top: 100px;
+}
+
+.home .body-home .body-home-container .img-home .home-pic-2 {
+    z-index: 4;
+    width: 220px;
+    z-index: 5;
+    position: absolute;
+    left: 20px;
+    top: 410px;
+}
+
+.home .body-home .body-home-container .img-home .mouse {
+    z-index: 4;
+    width: 100px;
+    z-index: 5;
+    position: absolute;
+    right: 150px;
+    top: 670px;
+}
+
+.home .body-home .body-home-container .img-home .home-pic-3 {
+    margin-top: 90px;
+    max-width: 800px;
+    max-height: 800px;
+    align-items: center;
+    z-index: -1;
+}
+
+.home .body-home .body-home-container .title-box-container .buttons {
+    display: grid;
+    grid-template-columns: 180px 150px;
+    gap: 20px;
+
+    align-items: center;
+    margin-top: 40px;
+}
+
+.home .body-home .body-home-container .title-box-container .buttons .button{
+    height: 80px;
+    width: 180px;
+    background-color: #5956E9;
+    border-radius: 20px;
+    border: none;
+
+    font-family: 'Poppins', sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.5;
+    color: #ffffff;
+}
+
+.home .body-home .body-home-container .title-box-container .buttons .play {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.5;
+    color: #999FAE;
+}
+
+.home .body-home .body-home-container .scroll {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    margin-top: 45px;
+    text-decoration: none;
+}
+
+.home .body-home .body-home-container .scroll .scroll-explore {
+    font-family: 'Poppns', sans-serif;
+    font-size: 18px;
+    font-weight: 400;
+    color: #797878;
+    text-decoration: none;
+
+    align-items: center;
+}
