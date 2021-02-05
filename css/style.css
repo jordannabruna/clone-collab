@@ -16,7 +16,6 @@
 
 body {
     background: #ffffff;
-    display: flex;
 }
 
 .home {
@@ -24,6 +23,7 @@ body {
     position: relative;
     width: 100%;
     height: fit-content;
+    margin-bottom: 90px;
 }
 .home .blue-large {
     width: 610px;
