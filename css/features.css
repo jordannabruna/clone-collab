@@ -20,8 +20,6 @@
 
     justify-content: center;
     position: relative;
-    
-    z-index: -4;
 }
 
 .features .pink-ball {
@@ -30,7 +28,7 @@
     border-radius: 100px;
     background-color: #FAB8C4;
     position: absolute;
-    z-index: -1;
+    z-index: 1;
     top: -98px;
     
     margin: 0 0 0 830px;
@@ -43,7 +41,7 @@
     border-radius: 200px;
     background-color: #5d5d70;
     position: absolute;
-    z-index: -1;
+    z-index: 1;
     top: 90px;
     
     margin: 0 0 0 1030px;
@@ -52,7 +50,7 @@
 
 .features .features-pic {
     position: absolute;
-    z-index: -3;
+    z-index: auto;
     margin-left: -345px;
 }
 
@@ -63,6 +61,10 @@
     color: #ffffff;
 
     z-index: 5;
+}
+
+.features .text {
+    z-index: 100;
 }
 
 .features .text .bold-text {
@@ -97,27 +99,30 @@
 }
 
 .features .cards-container .card-content {
-    display: grid;
+    
+}
+.features .cards-container .card-content .slide-card {
+    display: none;
     grid-template-columns: 350px 350px;
     gap: 100px;
 
     margin-bottom: 70px;
 }
 
-.features .cards-container .card-content .card .image {
+.features .cards-container .card-content .slide-card .card .image {
     width: 180px;
     align-items: center;
     margin-bottom: 20px;
 }
 
-.features .cards-container .card-content .card .image-calendar {
+.features .cards-container .card-content .slide-card .card .image-calendar {
     width: 140px;
     align-items: center;
 
     margin-bottom: 20px;
 }
 
-.features .cards-container .card-content .card .title {
+.features .cards-container .card-content .slide-card .card .title {
     font-family: 'DM Sans', sans-serif;
     font-size: 24px;
     font-weight: 400;
@@ -127,7 +132,7 @@
     margin-bottom: 35px;
 }
 
-.features .cards-container .card-content .card .description {
+.features .cards-container .card-content .slide-card .card .description {
     font-family: 'Poppins', sans-serif;
     font-size: 16px;
     font-weight: 300;
@@ -137,10 +142,32 @@
     margin-bottom: 40px;
 }
 
-.features .cards-container .card-content .card .link {
+.features .cards-container .card-content .slide-card .card .link {
     font-family: 'Poppins', sans-serif;
     font-size: 16px;
     font-weight: 600;
     line-height: 1.4;
     color: #9c9a9a;
 }
+
+.features .cards-container .cards-status {
+    display: grid;
+}
+
+.features .cards-container .cards-status .arrows {
+
+}
+
+.features .cards-container .cards-status .arrows .left-arrow {
+    width: 35px;
+    opacity: 40%;
+    cursor: pointer;
+}
+
+.features .cards-container .cards-status .arrows .right-arrow {
+    width: 35px;
+    opacity: 40%;
+    cursor: pointer;
+}
+
+

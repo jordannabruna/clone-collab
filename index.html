@@ -8,6 +8,8 @@
     <link rel="stylesheet" href="/css/features.css">
 </head>
 <body>
+    <script src="./scripts.js"></script>
+
     <div class="home">
         
         <div class="large-yellow-ball">
@@ -124,37 +126,76 @@
         </div>
 
         <div class="cards-container">
-            <div class="cards-status"></div>
+            <div class="cards-status">
+                <div class="arrows">
+                    <a onclick="plusSlides(-1)"><img class="left-arrow" src="/assets/img/left-arrow.svg" alt=""></a>
+                    <a onclick="plusSlides(1)"><img class="right-arrow" src="/assets/img/right-arrow.svg" alt=""></a>
+                </div>
+            </div>
                 <div class="card-content">
-                    <div class="card">
-                        <img class="image" src="/assets/img/camera.png" alt="">
-
-                        <h3 class="title">Import Photos &amp; Video</h3>
-        
-                        <div class="description">
-                            <p>Simply drag  and drop photos and videos</p>
-                            <p>into your workspace to automatically add</p>
-                            <p>them to your Collab Cloud library.</p>
+                    <div class="slide-card">
+                        <div class="card">
+                            <img class="image" src="/assets/img/camera.png" alt="">
+    
+                            <h3 class="title">Import Photos &amp; Video</h3>
+            
+                            <div class="description">
+                                <p>Simply drag  and drop photos and videos</p>
+                                <p>into your workspace to automatically add</p>
+                                <p>them to your Collab Cloud library.</p>
+                            </div>
+            
+                            <p class="link">Find out more</p>
                         </div>
-        
-                        <p class="link">Find out more</p>
+            
+                        <div class="card">
+                            <img class="image-calendar" src="/assets/img/calendar.png" alt="">
+            
+                            <div class="title">Calendar API Built-In</div>
+            
+                            <div class="description">
+                                <p>Kickstart your design process for a wide</p>
+                                <p>variety of apps such as calendar,</p>
+                                <p>analytics, virtual assistant, lile menager.</p>
+                            </div>
+            
+                            <p class="link">Find out more</p>
+                        </div>
                     </div>
-        
-                    <div class="card">
-                        <img class="image-calendar" src="/assets/img/calendar.png" alt="">
-        
-                        <div class="title">Calendar API Built-In</div>
-        
-                        <div class="description">
-                            <p>Kickstart your design process for a wide</p>
-                            <p>variety of apps such as calendar,</p>
-                            <p>analytics, virtual assistant, lile menager.</p>
+
+                    <div class="slide-card">
+                        <div class="card">
+                            <img class="image-calendar" src="/assets/img/calendar.png" alt="">
+                            
+                            <div class="title">Calendar API Built-In</div>
+                            
+                            <div class="description">
+                                <p>Kickstart your design process for a wide</p>
+                                <p>variety of apps such as calendar,</p>
+                                <p>analytics, virtual assistant, lile menager.</p>
+                            </div>
+                            
+                            <p class="link">Find out more</p>
                         </div>
-        
-                        <p class="link">Find out more</p>
+
+                        <div class="card">
+                            <img class="image" src="/assets/img/camera.png" alt="">
+                
+                            <h3 class="title">Import Photos &amp; Video</h3>
+                        
+                            <div class="description">
+                                <p>Simply drag  and drop photos and videos</p>
+                                <p>into your workspace to automatically add</p>
+                                <p>them to your Collab Cloud library.</p>
+                            </div>
+                        
+                            <p class="link">Find out more</p>
+                        </div>
+                    </div>
                     </div>
                 </div>
         </div>
     </div>
+    <script src="./scripts.js"></script>
 </body>
 </html>
